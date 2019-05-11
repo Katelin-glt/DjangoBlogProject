@@ -25,7 +25,7 @@ SECRET_KEY = 'iy44#y3t8mhd4)^75tlmv8#7qwfbx(rq!&sif+f!8i$%fs5*wy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.katelin.site']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.39.106.60.75']
 
 
 # Application definition
