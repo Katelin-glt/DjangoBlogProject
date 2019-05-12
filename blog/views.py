@@ -55,11 +55,11 @@ def detail(request, pk):
     return render(request, 'blog/detail.html', context=context)
 
 
-def archives(requst, year, month):
+def archives(request, year, month):
     post_list = Post.objects.filter(created_time__year=year,
                                     created_time__month=month
                                     ).order_by('-created_time')
-    return render(requst, 'blog/index.html', context={'post_list': post_list})
+    return render(request, 'blog/index.html', context={'post_list': post_list})
 
 
 def category(request, pk):
