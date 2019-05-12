@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog', # 注册blog应用
     'comments', # 注册新创建的comments应用
-    #'gunicorn',
-    #'gunicorn',
+    'gunicorn',
 
 ]
 
@@ -123,4 +122,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') # 指明了静态文件的收集目录
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static') # 指明了静态文件的收集目录
+STATIC_ROOT = '/var/www/static/'
